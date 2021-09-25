@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="ColorPicker.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel x:Name="AboutPanel" Visibility="Visible" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="Assets/Square44x44Logo.targetsize-256.png" Height="64" Width="64" />
+            <TextBlock>PenguinColorPicker v1.0</TextBlock>
+            <TextBlock>by Pinguin2001</TextBlock>
+            <TextBlock>App icon designed by <Hyperlink NavigateUri="https://www.flaticon.com/authors/freepik">Freepik</Hyperlink> from <Hyperlink NavigateUri="https://www.flaticon.com/">Flaticon</Hyperlink></TextBlock>
+            <TextBlock><Hyperlink NavigateUri="https://github.com/Pinguin2001/PenguinColorPicker">Source Code on GitHub</Hyperlink></TextBlock>
+            <Button Click="CloseAbout_Click">Close</Button>
+        </StackPanel>
+    </Grid>
+</Page>
