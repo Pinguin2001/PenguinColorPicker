@@ -5,6 +5,7 @@ Simple ColorPicker written in C# for UWP that allows you to select an color from
 # Credits:
 
 App icon designed by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon.com](https://www.flaticon.com/)
+
 Microsoft for WinUI, Visual Studio, ...
 
 # Supported devices:
