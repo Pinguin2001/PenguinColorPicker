@@ -2,6 +2,9 @@
 
 Simple ColorPicker written in C# for UWP that allows you to select an color from the Color Spectrum and show its hex code or the other way around
 
+# Screenshot
+![Screenshot](screenshot.png)
+
 # Credits:
 
 App icon designed by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon.com](https://www.flaticon.com/)
