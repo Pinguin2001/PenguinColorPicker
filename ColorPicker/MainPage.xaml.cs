@@ -1,5 +1,10 @@
-﻿using Windows.UI.Xaml;
+﻿using System;
+using Windows.ApplicationModel.Core;
+using Windows.System.Profile;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 
 namespace ColorPicker
 {
@@ -7,11 +12,35 @@ namespace ColorPicker
     {
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            // If device is desktop load custom title bar
+            if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Desktop") { TitleBarLoader(); }
+            // Load Home Page
+            contentFrame.Navigate(typeof(Pages.Home), null, new DrillInNavigationTransitionInfo());
         }
-        private void OpenAbout_Click(object sender, RoutedEventArgs e)
+        private void TitleBarLoader()
         {
-            this.Frame.Navigate(typeof(AboutPage), null);
+            // Load Title bar
+            this.FindName("AppTitleBar");
+            // Extend View into Titlebar
+            var coreTitleBar = CoreApplication.GetCurrentView().TitleBar;
+            coreTitleBar.ExtendViewIntoTitleBar = true;
+            var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            // Set Colors
+            titleBar.BackgroundColor = Colors.Transparent;
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
+            titleBar.ButtonHoverBackgroundColor = Colors.Transparent;
+            titleBar.ButtonPressedBackgroundColor = Colors.Transparent;
+            titleBar.InactiveBackgroundColor = Colors.Transparent;
+            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+        }
+
+        private void NavView_ItemInvoked(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs args)
+        {
+            // Get Invoked Item
+            object pageTag = args.InvokedItemContainer.Tag;
+            // Navigate to selected page with DrillIn Transition Animation
+            contentFrame.Navigate(Type.GetType($"ColorPicker.Pages.{pageTag}"), null, new DrillInNavigationTransitionInfo());
         }
     }
 }

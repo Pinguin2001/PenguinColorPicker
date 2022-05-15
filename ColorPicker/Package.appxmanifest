@@ -9,7 +9,7 @@
   <Identity
     Name="PenguinColorPicker"
     Publisher="CN=Pinguin2001"
-    Version="1.0.0.0" />
+    Version="2.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="0edda424-88e6-4669-8edb-771e298e2c58" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

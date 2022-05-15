@@ -1,0 +1,101 @@
+﻿<Page
+    x:Class="ColorPicker.Pages.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ColorPicker.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot>
+            <PivotItem Header="About">
+                <ScrollViewer>
+                    <StackPanel>
+                        <controls:Expander
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Header="Version Information"
+                            IsExpanded="True">
+                            <controls:Expander.Content>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                    Width="64"
+                                    Height="64"
+                                    Source="ms-appx:///Assets/Square44x44Logo.targetsize-256.png" />
+                                    <RichTextBlock>
+                                        <Paragraph>PenguinColorPicker v2.0 (rc)</Paragraph>
+                                        <Paragraph>by Pinguin2001</Paragraph>
+                                        <Paragraph>
+                                            <Hyperlink NavigateUri="https://github.com/Pinguin2001/PenguinColorPicker">Source Code</Hyperlink>
+                                        </Paragraph>
+                                        <Paragraph>
+                                            Licensed under the
+                                            <Hyperlink NavigateUri="https://github.com/Pinguin2001/PenguinColorPicker/blob/main/LICENSE">MIT License</Hyperlink>
+                                        </Paragraph>
+                                    </RichTextBlock>
+                                </StackPanel>
+                            </controls:Expander.Content>
+                        </controls:Expander>
+                        <controls:Expander
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Header="Thanks to"
+                            IsExpanded="True">
+                            <controls:Expander.Content>
+                                <RichTextBlock>
+                                    <Paragraph>App icon designed by
+                                        <Hyperlink NavigateUri="https://www.flaticon.com/authors/freepik">Freepik</Hyperlink> from
+                                        <Hyperlink NavigateUri="https://www.flaticon.com/">Flaticon</Hyperlink>
+                                    </Paragraph>
+                                </RichTextBlock>
+                            </controls:Expander.Content>
+                        </controls:Expander>
+                        <controls:Expander
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Header="Dependencies"
+                            IsExpanded="True">
+                            <controls:Expander.Content>
+                                <RichTextBlock>
+                                    <Paragraph>
+                                        <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/apps/design/downloads/#fonts">Segoe Fluent Icons</Hyperlink>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        <Hyperlink NavigateUri="https://aka.ms/winui">WinUI Library</Hyperlink>
+                                    </Paragraph>
+                                </RichTextBlock>
+                            </controls:Expander.Content>
+                        </controls:Expander>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Changelog">
+                <ScrollViewer>
+                    <StackPanel>
+                        <controls:Expander
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Header="v2.0 (rc)"
+                            IsExpanded="True">
+                            <controls:Expander.Content>
+                                <RichTextBlock>
+                                    <Paragraph>- (Appearance) Added NavigationView</Paragraph>
+                                    <Paragraph>- (Appearance) Fixed icon size</Paragraph>
+                                    <Paragraph>- (Appearance) Update General UI Appearance</Paragraph>
+                                    <Paragraph>- (Dependency) Update Microsoft.NETCore.UniversalWindowsPlatform to v6.2.13</Paragraph>
+                                    <Paragraph>- (Dependency) Added Seoge UI Fluent Icons in order to use them on OS Versions below Windows 11</Paragraph>
+                                    <Paragraph>- (Dependency) Update WinUI to v2.7.1</Paragraph>
+                                    <Paragraph>- (Feature) Added alpha (transparency)</Paragraph>
+                                    <Paragraph>- (Feature) Added ring color spectrum shape</Paragraph>
+                                </RichTextBlock>
+                            </controls:Expander.Content>
+                        </controls:Expander>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
