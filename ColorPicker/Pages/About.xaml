@@ -26,7 +26,7 @@
                                     Height="64"
                                     Source="ms-appx:///Assets/Square44x44Logo.targetsize-256.png" />
                                     <RichTextBlock>
-                                        <Paragraph>PenguinColorPicker v2.0 (rc)</Paragraph>
+                                        <Paragraph>PenguinColorPicker v2.0</Paragraph>
                                         <Paragraph>by Pinguin2001</Paragraph>
                                         <Paragraph>
                                             <Hyperlink NavigateUri="https://github.com/Pinguin2001/PenguinColorPicker">Source Code</Hyperlink>
@@ -78,15 +78,15 @@
                         <controls:Expander
                             HorizontalAlignment="Stretch"
                             HorizontalContentAlignment="Left"
-                            Header="v2.0 (rc)"
+                            Header="v2.0"
                             IsExpanded="True">
                             <controls:Expander.Content>
                                 <RichTextBlock>
                                     <Paragraph>- (Appearance) Added NavigationView</Paragraph>
                                     <Paragraph>- (Appearance) Fixed icon size</Paragraph>
                                     <Paragraph>- (Appearance) Update General UI Appearance</Paragraph>
-                                    <Paragraph>- (Dependency) Update Microsoft.NETCore.UniversalWindowsPlatform to v6.2.13</Paragraph>
                                     <Paragraph>- (Dependency) Added Seoge UI Fluent Icons in order to use them on OS Versions below Windows 11</Paragraph>
+                                    <Paragraph>- (Dependency) Update Microsoft.NETCore.UniversalWindowsPlatform to v6.2.13</Paragraph>
                                     <Paragraph>- (Dependency) Update WinUI to v2.7.1</Paragraph>
                                     <Paragraph>- (Feature) Added alpha (transparency)</Paragraph>
                                     <Paragraph>- (Feature) Added ring color spectrum shape</Paragraph>
