@@ -16,7 +16,7 @@ namespace ColorPicker
             // If device is desktop load custom title bar
             if (AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Desktop") { TitleBarLoader(); }
             // Load Home Page
-            contentFrame.Navigate(typeof(Pages.Home), null, new DrillInNavigationTransitionInfo());
+            contentFrame.Navigate(typeof(Pages.Home));
         }
         private void TitleBarLoader()
         {
@@ -38,7 +38,7 @@ namespace ColorPicker
             // Get Invoked Item
             object pageTag = args.InvokedItemContainer.Tag;
             // Navigate to selected page with DrillIn Transition Animation
-            contentFrame.Navigate(Type.GetType($"ColorPicker.Pages.{pageTag}"), null, new DrillInNavigationTransitionInfo());
+            contentFrame.Navigate(Type.GetType($"ColorPicker.Pages.{pageTag}"));
         }
     }
 }
