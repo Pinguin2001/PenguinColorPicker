@@ -7,16 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.Resources>
-        <Thickness x:Key="NavigationViewContentMargin">0,5,0,0</Thickness>
-    </Page.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Grid x:Name="AppTitleBar" x:Load="False">
+        <Grid x:Name="AppTitleBar" Height="32" x:Load="False">
             <Image
                 Grid.Column="1"
                 Width="20"
